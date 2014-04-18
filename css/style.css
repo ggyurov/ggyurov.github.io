@@ -14,7 +14,6 @@ html {
 
 .logo {
   display: block;
-  background: url(../img/logo.png) center no-repeat;
   width: 42px;
   height: 55px;
   text-indent: -9999em;
@@ -33,11 +32,13 @@ html {
   max-width: 750px;
   font-size: 26px;
   line-height: 1.8em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .intro-title-2 {
   margin-bottom: 40px;
   text-transform: uppercase;
   font-size: 19px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 @media screen and (max-width : 480px){
   .intro-title-1 {
@@ -84,6 +85,7 @@ html {
 }
 .about-section h2 {
   font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .about-section p {
   padding-top: 10px;
@@ -143,6 +145,7 @@ html {
   margin-top: 20px;
   display: inline;
   color: #777777;
+  font-size: 1.2em;
 }
 .footer-policy {
   margin-left: 3.5%;
@@ -245,7 +248,7 @@ html {
 	-o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 100%;
   display: block;
 }
 .twoten {

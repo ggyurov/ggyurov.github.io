@@ -3153,6 +3153,7 @@ button.close {
   position: relative;
   min-height: 30px;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .navbar:before,
