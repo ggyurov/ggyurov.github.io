@@ -1918,7 +1918,7 @@ textarea.input-lg {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: bold;
   line-height: 1.428571429;
   text-align: center;
@@ -1966,9 +1966,10 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #333333;
+  color: #428bca;
   background-color: #ffffff;
-  border-color: #cccccc;
+  border-color: #428bca;
+  border-radius: 5px;
 }
 
 .btn-default:hover,
@@ -1976,9 +1977,10 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #428bca;
+  border-color: #ededed;
+  
 }
 
 .btn-default:active,
