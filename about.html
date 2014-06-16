@@ -26,7 +26,7 @@
 
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
@@ -35,7 +35,7 @@
 
 <body>
 
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar transparent navbar-default" role="navigation">
 	  	  <div class="container">
 			  <div class="navbar-header">
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -62,16 +62,17 @@
 	  </nav>
     
     
-    <div class="profile-header"></div>
-    <div class="profile-picture"></div>
+    <div class="profile-header profile-header-top ph-01" alt="Image Credit: https://www.flickr.com/photos/4fifty/"></div>
     
-    <section class="profile">
+
+    <section class="profile space">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-lg-offset-1">
+            <div class="col-lg-8 col-lg-offset-2">
+            <div class="profile-picture"></div>
 			<h2>Shaping things for web</h2>
 			<p>
-				I am passionate junior front-end developer with positive attitude. I geek out about things like clean code, new tools and libraries.
+				I am a passionate junior front-end developer with positive attitude. I geek out about things like clean code, new tools and libraries.
 			</p>
 			<p>
 				The one thing that keeps pushing me into continuous development of my tech skills is the constant change of technology. 
@@ -85,13 +86,17 @@
             <p>
 				I know stuff or two about back-end, too, but my main focus is front-end. I aim to make the website work first and look cool second.
             </p>
-			<br><br>
-            <h2>Speaking</h2>
-				<p >I did a presentation on the basics of Responsive Web Design for a class in Technical University of Sofia.<br>
-					<i class="fa fa-download" title="Download PDF"></i> <a href="files/RWD.pdf" target="_blank" alt="Download PDF of the presentation">Download PDF</a>
-				</p>
             </div>
-			<div class="col-lg-5">
+        </div>
+    </div>
+    </section>
+
+    <div class="profile-header ph-02" alt="Image Credit: https://www.flickr.com/photos/4fifty/"></div>
+
+    <section class="profile space">
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
             <h2>I use the following techniques and languages: </h2>
                     <ul class="skills">
                         <li class="skills-item css">OOCSS, SASS for CSS3</li>
@@ -106,13 +111,30 @@
                         <li class="skills-item java">Java</li>
                         <li class="skills-item github">Git</li>
                     </ul>
-            </p>
+            </div>
+         </div>
+    </div>
+    </div>
+    </section>
+
+    <div class="profile-header ph-03" alt="Image Credit: https://www.flickr.com/photos/4fifty/"></div>
+
+    <section class="profile space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <h2>Speaking</h2>
+                   <p>I did a presentation on the basics of Responsive Web Design for a class in Technical University of Sofia.<br>
+                    <i class="fa fa-download" title="Download PDF"></i> <a href="files/RWD.pdf" target="_blank" alt="Download PDF of the presentation">Download PDF</a>
+                 </p>
             </div>
         </div>
     </div>
+
 	<div class="profile-contact">
 		<p class="text-center">Interested in hiring me for your next project? <a href="contact.html" alt="Work With Me"><button class="btn btn-default"><span class="text-large">GET IN TOUCH</span></button></a></p>
 	</div>
+
     </section>
 
 	<section class="footer-section">
@@ -122,7 +144,7 @@
                     <p class="footer-copyright text-left">Copyright &copy; Georgi Gyurov 2014</p><br />
                 </div>
 				<div class="col-lg-6">
-                    <p class="footer-social text-right"><a href="http://twitter.com/georgigyurov7" alt="Georgi Gyurov on Twitter"><i class="fa fa-twitter twitter"></i></a> <a href="http://facebook.com/GGyurov.EU" alt="GGyurov.EU on Facebook"><i class="fa fa-facebook facebook"></i></a>  <a href="https://plus.google.com/u/0/113007913053306054938/posts" alt="Georgi Gyurov on Google+"><i class="fa fa-google-plus plus"></i></a> <a href="http://www.linkedin.com/pub/georgi-gyurov/57/550/a01" alt="Georgi Gyurov on LinkedIN"><i class="fa fa-linkedin in"></i></a></p>
+                    <p class="footer-social text-right"><a href="http://twitter.com/georgigyurov7" alt="Georgi Gyurov on Twitter"><i class="fa fa-twitter twitter"></i></a> <a href="https://github.com/ggyurov" alt="GGyurov.EU on Facebook"><i class="fa fa-github facebook"></i></a>  <a href="http://www.linkedin.com/pub/georgi-gyurov/57/550/a01" alt="Georgi Gyurov on LinkedIN"><i class="fa fa-linkedin in"></i></a></p>
                 </div>
             </div>
         </div>
