@@ -5,6 +5,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
 }
 
 html {
@@ -12,11 +13,21 @@ html {
   height: 100%;
 }
 
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto;
+}
+
 .logo {
   display: block;
   width: 42px;
   height: 55px;
-  text-indent: -9999em;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;  
 }
 
 /* INTRO SECTION HOME PAGE */
@@ -93,29 +104,71 @@ html {
   color: dark grey;
 }
 
+.profile {
+  margin-top: 30px;
+}
+.profile p {
+  font-size: 21px;
+}
+.profile h2 {
+  margin-top: -3px;
+  font-family: inherit;
+  font-weight: bold;
+}
+.profile-picture {
+  position: relative;
+  margin: 0 30px 30px 0;
+  background: url(../img/profile-picture.jpg) center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+.profile-header {
+  display: block;
+  width: 100%;
+  height: 45%;
+}
+.profile-header-top { /*Profile Page Top Pic*/
+  margin-top: -80px;
+}
+.ph-01 {
+  background: url(../img/pro-01.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  background-size: cover; 
+}
+@media screen and (max-width : 480px){
+    .ph-01 {
+      width: 100%;
+      max-height: 300px;
+    }
+}
+.icon-color {
+  color: #bd1f34;
+}
+.profile-contact {
+  margin-top: 75px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width : 480px){
+    .profile-contact {
+      margin: 10% 0 15% 0;
+    }
+}
+
 /* END ABOUT PAGE */
 
 /* CONTACT PAGE */
 
-.contact-section-header {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: table;
-  width: 100%;
-  height: 50%;
-  background: url(../img/header-image.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  background-size: cover;
-  text-align: left;
-  color: #fff;
-  font-size: 26px;
-}
 .contact-section{
-  margin-top: -15px;
-  padding-bottom: 70px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px; 
   text-align: left;
   font-size: 18px;
 }
@@ -134,7 +187,10 @@ html {
    text-align: center;
    background: #fff;
 }
+
+/* FOOTER */
 .footer-section {
+  min-height: 90px;
   padding-top: 30px;
   padding-bottom: 10px;
   background: #eee;
@@ -146,12 +202,6 @@ html {
   display: inline;
   color: #777777;
   font-size: 1.2em;
-}
-.footer-policy {
-  margin-left: 3.5%;
-  margin-top: 5px;
-  font-weight: bold;
-  font-size: 11px;
 }
 .footer-social {
   font-size: 26px;
@@ -216,56 +266,11 @@ html {
       max-height: 250px;
     }
 }
-/* PROFILE PAGE */
-.profile {
-  margin-top: 30px;
-}
-.profile p {
-  font-size: 21px;
-}
-.profile h2 {
-  margin-top: -3px;
-  font-family: inherit;
-  font-weight: bold;
-}
-.profile-picture {
-  position: relative;
-  margin: 0 30px 30px 0;
-  background: url(../img/profile-picture.jpg) center;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  border: 3px solid #fff;
-  overflow: hidden;
-}
-.profile-header {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.profile-header-top { /*Profile Page Top Pic*/
-  margin-top: -80px;
-}
-.ph-01 {
-  background: url(../img/pro-01.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-  background-size: cover; 
-}
-.icon-color {
-  color: #bd1f34;
-}
-.profile-contact {
-  margin-top: 45px;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-}
+
 /* SHOWCASE PAGE */
 .header {
   display: block;
-  margin-top: -15px;
+  margin-top: -5px;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
