@@ -13,6 +13,9 @@ html {
   height: 100%;
 }
 
+::selection { color: #fff; background: #428bca; }
+::-moz-selection { color: #fff; background: #428bca; }
+
 .wrap {
   min-height: 100%;
   height: auto !important;

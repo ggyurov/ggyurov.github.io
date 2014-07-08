@@ -3366,9 +3366,14 @@ button.close {
   padding-top: 10px;
   line-height: 20px;
   color: #777;
-  text-transform: uppercase;
-  font-size: 17px;
+  font-size: 0.45em;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media screen and (max-width : 480px){
+  .navbar-nav > li > a {
+    font-size: 1.32em;
+  }
 }
 
 .navbar-nav > li > a:hover,
