@@ -16,21 +16,9 @@
     <!-- Custom CSS -->
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-    <!-- Google Analytics -->
-    <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-50094750-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    <!-- Prefetch DNS for external assets -->
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
 </head>
 
 <body>
@@ -85,8 +73,10 @@
     </section>
 
     <!-- Core JavaScript Files -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script async src="js/jquery-1.10.2.js"></script>
+    <script async src="js/bootstrap.min.js"></script>
+
+    <!--Contact Form Validator -->
     <script language="JavaScript">
     var frmvalidator  = new Validator("contactform");
     frmvalidator.addValidation("name","req","Please provide your name"); 
@@ -94,5 +84,19 @@
     frmvalidator.addValidation("email","email","Please enter a valid email address"); 
     </script>
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-50094750-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 </body>
 </html>
