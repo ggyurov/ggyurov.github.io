@@ -5,10 +5,10 @@ ExpiresByType img/jpg "access 1 month"
 ExpiresByType img/jpeg "access 1 month"
 ExpiresByType img/gif "access 1 month"
 ExpiresByType img/png "access 1 month"
-ExpiresByType css "access 1 month"
+ExpiresByType css/. "access 1 month"
 ExpiresByType html "access 1 month"
 ExpiresByType files/pdf "access 1 month"
-ExpiresByType js/x-javascript "access 1 month"
+ExpiresByType js/. "access 1 month"
 ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
