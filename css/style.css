@@ -64,20 +64,21 @@ html {
 
 }
 
-@media screen and (max-width : 720px){
+@media screen and (max-width: 480px){
   .logo {
     padding: 0 0 0 1.5%;
   }
   .intro-section {
-    height: 43%;
+    height: 20%;
   }
   .intro-title-1 {
     font-size: 20px;
     text-align: center;
   }
   .intro-title-2 {
-    font-size: 21px;
-    font-weight 0;
+    margin: 10% 0 10% 0;
+    font-size: 19px;
+    font-weight: none;
   }
 }
 
@@ -99,16 +100,32 @@ html {
 
 .testimonials__text {
   padding: 5% 0 0 0;
-  font-size: 23px;
+  font-size: 26px;
   font-weight: 600;
 }
 
-@media screen and (max-width : 720px){
+@media screen and (max-width: 480px){
+    .testimonials {
+      margin: 0 0 5% 0;
+      min-height: 35%;
+    }
     .testimonials__text {
       padding: 8% 0 0 0;
-      font-size: 1em;
+      font-size: 16px;
     }
 }
+
+@media screen and (min-width: 1024px){
+
+    .testimonials {
+      margin: 2.5% 0 5% 0;
+      height: 22%;
+    }
+    .testimonials__text {
+      font-size: 22px;
+    }
+}
+
 
 .testimonials__person {
   font-size: 17px;
