@@ -229,7 +229,7 @@ html {
   margin-top: -80px;
 }
 .ph-01 {
-  background: url(../img/pro-01.jpg) no-repeat center center fixed;
+  background: url(../img/pro-01.min.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -384,32 +384,32 @@ html {
   height: 100%;
 }
 .twoten {
-  background: url(../img/twoten-full-01.png) center top repeat fixed;
+  background: url(../img/twoten-full-01.min.png) center top repeat fixed;
 }
 .fuji {
-  background: url(../img/Fuji-full.png) center top repeat fixed;
+  background: url(../img/Fuji-full.min.png) center top repeat fixed;
 }
 .ebook {
-  background: url(../img/ebook-landing.png) center top repeat fixed;
+  background: url(../img/ebook-landing.min.png) center top repeat fixed;
 }
 .cadeci {
-  background: url(../img/cadeci-full.jpg) center top repeat fixed;
+  background: url(../img/cadeci-full.min.jpg) center top repeat fixed;
 }
 @media screen and (max-width : 480px){
     .header {
         height: 50%;
     }
     .twoten {
-        background: url(../img/twoten-mobile.png) no-repeat top;
+        background: url(../img/twoten-mobile.min.png) no-repeat top;
     }
     .fuji {
-        background: url(../img/Fuji-mobile.png) no-repeat top;
+        background: url(../img/Fuji-mobile.min.png) no-repeat top;
     }
     .ebook {
-       background: url(../img/ebook-mobile.png) no-repeat;
+       background: url(../img/ebook-mobile.min.png) no-repeat;
     }
     .cadeci {
-       background: url(../img/cadeci-mobile.png) no-repeat top;
+       background: url(../img/cadeci-mobile.min.png) no-repeat top;
     }
 }
 .text-large {
