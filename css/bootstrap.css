@@ -3155,7 +3155,7 @@ button.close {
 .navbar {
   position: relative;
   min-height: 30px;
-  margin: 10px 0 15px 0;
+  margin: 20px 0 25px 0;
 }
 
 .navbar:before,
@@ -3313,7 +3313,6 @@ button.close {
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 .navbar-brand:hover,
 .navbar-brand:focus {
   color: #5e5e5e;
@@ -3370,6 +3369,14 @@ button.close {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+ .navbar-nav .active{
+  color: #428bca;
+}
+
+ .navbar-nav .active:hover {
+  color: #428bca;
+}
+
 @media screen and (max-width : 480px){
   .navbar-nav > li > a {
     font-size: 1.32em;
@@ -3378,8 +3385,8 @@ button.close {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-  color:inherit;
-    background-color: transparent;
+  color: #428bca;
+  background-color: transparent;
 }
 
 .navbar-nav > .active > a,
