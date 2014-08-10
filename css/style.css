@@ -226,6 +226,7 @@ html {
 /* CONTACT PAGE */
 
 .contact-section{
+  margin: 0 0 5% 0;
   min-height: 100%;
   height: auto !important;
   height: 100%;
