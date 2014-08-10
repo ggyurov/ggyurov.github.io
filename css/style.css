@@ -54,10 +54,10 @@ html {
 .intro-title-2 {
   margin: 5% 0 0 12%;
   text-align: left;
-  font-size: 48px;
+  font-size: 24px;
   font-family: 'Source Sans Pro';
   line-height: 1.8em;
-  color: #aeaeae;
+  /*color: #aeaeae;*/
 }
 
 @media screen and (max-width: 480px){
