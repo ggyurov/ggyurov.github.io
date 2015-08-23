@@ -49,10 +49,70 @@ html {
   }
 }
 
-.intro-section  {
-  padding: 5% 0 5% 0;  
+.navbar-brand,
+.nav>li a {
+  color: #fff;
+}
+
+.navbar-brand:hover,
+.navbar-nav .active, 
+.navbar-nav .active:hover,
+.nav>li a:hover {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/*linear bckg for header*/
+.navbar,
+.intro-section {
   background-color: #428bca;
-  background-image: linear-gradient(#5D9CEC, #4A89DC);
+  background-image: linear-gradient(#5D9CEC,#4A89DC);
+}
+
+.navbar {
+    min-height: 15px;
+    padding: 10px 0 15px;
+}
+
+
+  /*reset some bootstrap styles*/
+.navbar-header {
+  padding-left: 0;
+}
+
+.navbar-nav>li>a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 30px;
+}
+
+.navbar-nav>li>a:first-child {
+  padding-left: 0;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+}
+
+.navbar-nav .active {
+  padding-top: 0;
+}
+
+.collapse {
+  display: block;
+  border: 0;
+  max-height: 100%;
+  box-shadow: none;
+}
+
+.nav>li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.intro-section  {
+  padding: 5% 0 5% 0;
   width: 100%;
   color: #fff;
 }
@@ -185,7 +245,7 @@ html {
 .profile-picture {
   position: relative;
   margin: 0 30px 30px 0;
-  background: url(../img/profile-picture.jpg) center;
+  background: url('../img/profile-pic-2105.jpg') center;
   width: 150px;
   height: 150px;
   border-radius: 100px;
@@ -238,6 +298,33 @@ html {
     }
 }
 
+.blue-link {
+  text-decoration: line-through;
+  color: #5D9CEC;
+}
+
+.skills-set {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .skills-set {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1;
+  }
+}
+
+.skills-set li {
+  list-style-type: none;
+}
+
+.skills-set-tick {
+  color: #5D9CEC;
+  padding-right: 10px;
+}
 
 
 /* END ABOUT PAGE */
