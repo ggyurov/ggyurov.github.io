@@ -4,21 +4,91 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Front-end development. Professional, quick and innovative work.">
-    <meta name="keywords" content="front, end, website, site, development, html, css, js, responsive, web, design">
+    <meta name="description" content="Georgi Gyurov - Front-end developer. Professional, quick and innovative work.">
+    <meta name="keywords" content="front, end, website, site, development, html, css, js, responsive, web, design, agile, scrum, demandware, oop, javascript">
     <meta name="author" content="Georgi Gyurov, @georgigyurov7">
 
     <title>Georgi Gyurov - Front-End Developer</title>
 
     <!-- Prefetch DNS for external assets -->
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <script type="text/javascript">
+        /*!
+        loadCSS: load a CSS file asynchronously.
+        [c]2014 @scottjehl, Filament Group, Inc.
+        Licensed MIT
+        */
+
+        /* exported loadCSS */
+        function loadCSS( href, before, media, callback ){
+            "use strict";
+            // Arguments explained:
+            // `href` is the URL for your CSS file.
+            // `before` optionally defines the element we'll use as a reference for injecting our <link>
+            // By default, `before` uses the first <script> element in the page.
+            // However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+            // If so, pass a different reference element to the `before` argument and it'll insert before that instead
+            // note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+            var ss = window.document.createElement( "link" );
+            var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+            var sheets = window.document.styleSheets;
+            ss.rel = "stylesheet";
+            ss.href = href;
+            // temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+            ss.media = "only x";
+            // DEPRECATED
+            if( callback ) {
+                ss.onload = callback;
+            }
+
+            // inject link
+            ref.parentNode.insertBefore( ss, ref );
+            // This function sets the link's media back to `all` so that the stylesheet applies once it loads
+            // It is designed to poll until document.styleSheets includes the new sheet.
+            ss.onloadcssdefined = function( cb ){
+                var defined;
+                for( var i = 0; i < sheets.length; i++ ){
+                    if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+                        defined = true;
+                    }
+                }
+                if( defined ){
+                    cb();
+                } else {
+                    setTimeout(function() {
+                        ss.onloadcssdefined( cb );
+                    });
+                }
+            };
+            ss.onloadcssdefined(function() {
+                ss.media = media || "all";
+            });
+            return ss;
+        }
+
+        loadCSS( "css/style.min.css" );
+    </script>
+    <noscript><link href="css/style.min.css" rel="stylesheet"></noscript>
+
+    <style type="text/css">
+        .navbar-nav>li>a:first-child {
+          padding-left: 0;
+        }
+        .navbar-nav>li>a {
+          padding-top: 0;
+          padding-bottom: 0;
+          line-height: 30px;
+        }
+        .navbar-brand, .nav>li a {
+          color: #fff;
+        }
+    </style>
+
     <!-- Custom CSS -->
-    <link href="css/style.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet'>
 </head>
@@ -29,7 +99,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="logo"><img src="img/ggyurov-logo.png" width="308" height="185" alt="Georgi Gyurov"></div>
-                    <!--<h2 class="intro-title-1">Georgi Gyurov</h2>-->
                 </div>
             </div>
         </div>
@@ -37,89 +106,97 @@
 
     <section class="about-section">
         <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="dash"></div>
-                <h2 class="projects"><i class="fa fa-gears"></i> Development</h2>
-                <p>I develop small and medium websites and apps providing pixel-perfect front-end development. I focus on performance, scalability, and more. I don't mind working in a team with other developers.</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="dash"></div>
+                    <h2 class="projects"><i class="fa fa-gears"></i> Development</h2>
+                    <p>I develop small and medium websites and apps providing pixel-perfect front-end development. I focus on performance, scalability, and more. I don't mind working in a team with other developers.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dash"></div>
+                    <h2 class="projects"><i class="fa fa-check"></i> Consultancy</h2>
+                    <p>I can offer consultancy on different matters - website performance, CSS optimization, tips on marketing your site in social media, or something else related to computers and/or web.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dash"></div>
+                    <h2 class="projects"><i class="fa fa-wrench"></i> Support</h2>
+                    <p>If you have a site that needs to be updated with new content, or it broke down and you don't want to get ripped off again by the people that built it. If that's your case - contact me and we'll work something out.</p>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <div class="dash"></div>
-                <h2 class="projects"><i class="fa fa-check"></i> Consultancy</h2>
-                <p>I can offer consultancy on different matters - website performance, CSS optimization, tips on marketing your site in social media, or something else related to computers and/or web.</p>
+
+            <div class="index-hire-about">
+                <p class="text-center"><a href="about.html" alt="More about Georgi Gyurov"><button class="btn btn-default space-left"><span class="text-large">Learn more</span></button></a> <span class="or">or</span> <a href="mailto:georgigyurov7@gmail.com?subject=Let’s%20work%20together" alt="Work With Me"><button class="btn btn-default hire-me-hp space-left"><span class="text-large">Hire me</span></button></a></p>
             </div>
-            <div class="col-lg-4">
-                <div class="dash"></div>
-                <h2 class="projects"><i class="fa fa-wrench"></i> Support</h2>
-                <p>If you have a site that needs to be updated with new content, or it broke down and you don't want to get ripped off again by the people that built it. If that's your case - contact me and we'll work something out.</p>
-            </div>
-        </div>
 
-        <div class="index-hire-about">
-            <p class="text-center"><a href="about.html" alt="More about Georgi Gyurov"><button class="btn btn-default space-left"><span class="text-large">Learn more</span></button></a> <span class="or">or</span> <a href="mailto:georgigyurov7@gmail.com?subject=Let’s%20work%20together" alt="Work With Me"><button class="btn btn-default hire-me-hp space-left"><span class="text-large">Hire me</span></button></a></p>
-        </div>
+            <hr class="line" />
+            <div class="dash"></div>
 
-        <hr class="line"></hr>
-
-        <div class="dash"></div>
-        <h2 class="projects">Projects</h2>
+            <h2 class="projects">Selected Projects (section is in progress...)</h2>
                <ul id="work" class="feature-list">
                     <li class="feature-list__item">
                         <a href="twoten.html" class="feature-list__link" style="background-color: #cdcabb;">
                             <h2 class="feature-list__title">TwoTen Photography
-                            <span class="feature-list__sub">Development, Responsive</span>
+                                <span class="feature-list__sub">Development, Responsive, 2013</span>
+                                <span class="feature-list__sub">Read case study >> </span>
                             </h2>
                         </a>
                     </li>
                     <li class="feature-list__item">
                         <a href="#" class="feature-list__link" style="background-color: #ff7e14;">
                             <h2 class="feature-list__title">FinestraBG
-                            <span class="feature-list__sub">Consultancy, Support</span>
+                                <span class="feature-list__sub">Consultancy, Support, 2014</span>
+                                <span class="feature-list__sub">Read case study >> </span>
                             </h2>
                         </a>
                     </li>
+                    <!--
                     <li class="feature-list__item">
                         <a href="cadeci.html" class="feature-list__link" style="background-color: #f3f3f3;">
                             <h2 class="feature-list__title" style="color: #000;">Cadeci
-                            <span class="feature-list__sub">Responsive development</span>
+                                <span class="feature-list__sub">Responsive development</span>
                             </h2>
                         </a>
-                    </li>
+                    </li>-->
                     <li class="feature-list__item">
                         <a href="#" class="feature-list__link" style="background-color: #2358a8;">
                             <h2 class="feature-list__title" style="color: #000;">SnapOrder
-                            <span class="feature-list__sub">Android, Front-end</span>
+                                <span class="feature-list__sub">Android, Front-end, 2014</span>
+                                <span class="feature-list__sub">Read case study >> </span>
                             </h2>
                         </a>
                     </li>
-                    <li class="feature-list__item">
-                        <a href="ebook.html" class="feature-list__link" style="background-color: #bb3146;">
-                            <h2 class="feature-list__title">How To Launch a Product
-                            <span class="feature-list__sub">Landing Page, E-book</span>
-                            </h2>
-                        </a>
-                    </li>
-                    <li class="feature-list__item">
+                    <!--<li class="feature-list__item">
                         <a href="fuji.html" class="feature-list__link" style="background-color: #01ac50;">
                             <h2 class="feature-list__title">Fujifilm
-                            <span class="feature-list__sub">Brand identity, Development, Design</span>
+                                <span class="feature-list__sub">Brand identity, Development, Design</span>
+                            </h2>
+                        </a>
+                    </li>-->
+                    <li class="feature-list__item">
+                        <a href="http://shop.animal.co.uk/" class="feature-list__link" style="background-color: #7ecfe0;">
+                            <h2 class="feature-list__title">Animal
+                                <span class="feature-list__sub">Front-end engineering, Demandware, 2015</span>
+                                <span class="feature-list__sub">Go to site >> </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="feature-list__item">
+                        <a href="twoten.html" class="feature-list__link" style="background-color: #e81273;">
+                            <h2 class="feature-list__title">Yumi Direct
+                                <span class="feature-list__sub">Front-end engineering, Demandware, 2015</span>
+                                <span class="feature-list__sub">Go to site >> </span>
                             </h2>
                         </a>
                     </li>
                 </ul>
         </div>
     </section>
-
-
-    <!--<div class="container">
-    <div class="hire-me-btn"><a href="mailto:georgigyurov7@gmail.com?subject=Let’s%20work%20together" alt="Hire Georgi Gyurov">Convinced already? Hire me.</a></div>
-    </div>-->
         
 	<section class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <p class="footer-copyright text-left">&copy; Georgi Gyurov 2014 • <a href="http://twitter.com/georgigyurov7" alt="Georgi Gyurov on Twitter">@georgigyurov7</a></p><br />
+                    <p class="footer-copyright text-left">&copy; Georgi Gyurov 2015 • <a href="http://twitter.com/georgigyurov7" alt="Georgi Gyurov on Twitter">@georgigyurov7</a></p><br />
                 </div>
 				<div class="col-lg-6">
                     <p class="footer-social text-right"><a href="http://twitter.com/georgigyurov7" alt="Georgi Gyurov on Twitter"><i class="fa fa-twitter twitter"></i></a> <a href="https://github.com/ggyurov" alt="GGyurov.EU on Facebook"><i class="fa fa-github facebook"></i></a>  <a href="http://www.linkedin.com/pub/georgi-gyurov/57/550/a01" alt="Georgi Gyurov on LinkedIN"><i class="fa fa-linkedin in"></i></a></p>
@@ -131,20 +208,5 @@
     <!-- Core JavaScript Files -->
     <script async src="js/jquery-1.10.2.js"></script>
     <script async src="js/bootstrap.min.js"></script>
-
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-50094750-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
 </body>
 </html>

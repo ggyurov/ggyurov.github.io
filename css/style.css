@@ -156,7 +156,7 @@ html {
 .projects {
   padding: 0 0 1% 0;
   font-family: 'Source Sans Pro', sans-serif; 
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .hire-me-btn {
@@ -297,6 +297,7 @@ html {
 }
 
 .skills-set {
+  padding-top: 20px;
   -webkit-columns: 2;
      -moz-columns: 2;
           columns: 2;
@@ -488,6 +489,7 @@ html {
 }
 .text-large {
   font-size: 2em;
+  font-weight: normal;
 }
 .skills {
   margin: 0;
