@@ -1,18 +1,27 @@
 @font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.0.3');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
 
-/* COLOR PALETTE
+/**  
+ *  COLORS
  * 
+ *  OLD:
  *  LIGHTER BLUE - #5D9CEC
  *  DARKER BLUE - #4A89DC
  *
-*/
+ *  NEW:
+ *  Blue theme: background-color: #3498DB;
+ *              color:            #cff2ff;
+ *
+ *  Green theme: background-color: #6BBD2E;
+ *               color:            #e1f3cb;
+ * 
+ *
+**/
 
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Slabo 27px', serif;
   font-size: 18px;
-  border-top: 5px solid #5D9CEC;
 }
 
 html {
@@ -32,26 +41,15 @@ html {
 
 /* INTRO SECTION HOME PAGE */
 
-.logo {
-  display: block;
-  margin: 0 auto;
-  /*padding: 0 0 0 0.7%;*/
-  width: 308px;
-  height: 185px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;  
+.navbar-nav {
+  float: right;
 }
 
-@media screen and (max-width: 480px){
-  .logo {
-    /*padding: 0 0 0 1.7%;*/
+@media screen and (max-width: 480px) {
+  .navbar-nav {
+    padding: 15px 0;
+    float: left;
   }
-}
-
-.navbar-brand,
-.nav>li a {
-  color: #fff;
 }
 
 .navbar-brand:hover,
@@ -60,13 +58,6 @@ html {
 .nav>li a:hover {
   color: #fff;
   text-decoration: line-through;
-}
-
-/*linear bckg for header*/
-.navbar,
-.intro-section {
-  background-color: #428bca;
-  background-image: linear-gradient(#5D9CEC,#4A89DC);
 }
 
 .navbar {
@@ -93,6 +84,7 @@ html {
 
 .navbar-brand {
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .navbar-nav .active {
@@ -112,25 +104,40 @@ html {
   display: inline-block;
 }
 
-.intro-section  {
-  padding: 5% 0 5% 0;
+.intro-section {
+  padding: 5% 0;
   width: 100%;
   color: #fff;
 }
 
-.intro-title-1 {
-  text-transform: uppercase;
+.blue-theme {
+  background-color: #3498DB;
+  color:            #cff2ff;
+}
+
+.intro-info {
   text-align: center;
+}
+
+.intro-title-1,
+.intro-title-name {
+  font-weight: 400;
+  font-family: 'Slabo 27px', serif;
+}
+
+.intro-title-1 {
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif; 
-  font-weight: 600;
+}
+
+.intro-title-name {
+  color: #fff;
+  font-size: 42px;
 }
 
 .intro-title-2 {
   margin: 0 auto;
   text-align: center;
   font-size: 34px;
-  font-family: 'Source Sans Pro';
   font-weight: 600;
   line-height: 1.5em;
 }
@@ -138,6 +145,11 @@ html {
 .intro-title-2 a {
   text-decoration: none;
   border-bottom: 1px dotted #a6a6a6;
+}
+
+.profile-h2,
+.profile-h3 {
+  font-family: 'Slabo 27px', serif;
 }
 
 .dash {
@@ -154,14 +166,13 @@ html {
 }
 
 .projects {
-  padding: 0 0 1% 0;
-  font-family: 'Source Sans Pro', sans-serif; 
+  padding: 0 0 1%;
   font-weight: 400;
 }
 
 .hire-me-btn {
-  margin: 0 0 5% 0;
-  padding: 1.5% 1.5% 1.5% 1.5%;
+  margin: 0 0 5%;
+  padding: 1.5%;
   width: 100%;
   height: 10%;
   background-color: #428bca;
@@ -175,7 +186,6 @@ html {
 
 .hire-me-btn a {
   color: #fff;
-  font-family: 'Source Sans Pro', sans-serif; 
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -190,7 +200,7 @@ html {
     text-align: center;
   }
   .intro-title-2 {
-    margin: 10% 0 10% 0;
+    margin: 10% 0;
     font-size: 21px;
   }
 }
@@ -226,14 +236,13 @@ html {
 /* ABOUT PAGE */
 
 .about-section {
-  margin: 5% 0 60px 0;
+  margin: 2% 0;
   font-size: 30px;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .about-section p {
   padding-top: 10px;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .profile-picture {
@@ -253,10 +262,6 @@ html {
 
 .profile p {
   font-size: 21px;
-}
-
-.profile h2 {
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .profile-header {
@@ -287,7 +292,7 @@ html {
 @media screen and (max-width : 480px){
     .profile-contact,
     .index-hire-about {
-      margin: 10% 0 15% 0;
+      margin: 10% 0 0;
     }
 }
 
@@ -297,7 +302,6 @@ html {
 }
 
 .skills-set {
-  padding-top: 20px;
   -webkit-columns: 2;
      -moz-columns: 2;
           columns: 2;
@@ -312,6 +316,7 @@ html {
 }
 
 .skills-set li {
+  padding: 5px 0;
   list-style-type: none;
 }
 
@@ -458,35 +463,6 @@ html {
   width: 100%;
   height: 100%;
 }
-.twoten {
-  background: url(../img/twoten-full-01.min.png) center top repeat fixed;
-}
-.fuji {
-  background: url(../img/Fuji-full.min.png) center top repeat fixed;
-}
-.ebook {
-  background: url(../img/ebook-landing.min.png) center top repeat fixed;
-}
-.cadeci {
-  background: url(../img/cadeci-full.min.jpg) center top repeat fixed;
-}
-@media screen and (max-width : 480px){
-    .header {
-        height: 50%;
-    }
-    .twoten {
-        background: url(../img/twoten-mobile.min.png) no-repeat top;
-    }
-    .fuji {
-        background: url(../img/Fuji-mobile.min.png) no-repeat top;
-    }
-    .ebook {
-       background: url(../img/ebook-mobile.min.png) no-repeat;
-    }
-    .cadeci {
-       background: url(../img/cadeci-mobile.min.png) no-repeat top;
-    }
-}
 .text-large {
   font-size: 2em;
   font-weight: normal;
@@ -532,3 +508,108 @@ html {
 .skills-item.adobe{width:87%}
 .skills-item.mobile{width:91%}
 .skills-item.android{width:50%;}
+
+/* PROJECTS SECTION */
+.project-section {
+  display: inline-block;
+  width: 100%;
+}
+
+.project-block {
+  height: 200px;
+}
+
+.project-info {
+  padding: 25px 0;
+  width: 50%;
+  height: 250px;
+}
+
+.project-brand-left .project-info {
+  padding-left: 40px;
+}
+
+.project-brand {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 250px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.project-brand span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+}
+
+.project-brand-right .project-info,
+.project-brand-left .project-brand {
+  float: left;
+}
+
+.project-brand-left .project-info,
+.project-brand-right .project-brand {
+  float: right;
+}
+
+.project-info-year-employer {
+  font-size: 14px;
+  color: #a6a6a6;
+}
+
+.project-info-title {
+  font-family: 'Slabo 27px', serif;
+}
+
+.project-info-link {
+  font-size: 18px;
+}
+
+.projects-line {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+  width: 100%;
+}
+
+.yumi {
+  background-color: #e81273;
+}
+
+.animal {
+  background-color: #7ecfe0;
+}
+
+.finestra {
+  background-color: #ff7e14;
+}
+
+.twoten {
+  background-color: #cdcabb;
+}
+
+.snaporder {
+  background-color: #2358a8;
+}
+
+@media screen and (max-width: 480px) {
+  .project-info, 
+  .project-brand {
+    float: left;
+    width: 100%;
+  }
+
+  .project-brand-left .project-info {
+    padding-left: 0;
+  }
+
+  .projects-line {
+    margin: 10px 0;
+  }
+} 

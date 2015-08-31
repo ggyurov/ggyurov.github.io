@@ -3305,8 +3305,6 @@ button.close {
   padding: 14.5px 10px 0 0;
   font-size: 20px;
   line-height: 20px;
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -3361,7 +3359,6 @@ button.close {
   line-height: 20px;
   color: #777;
   font-size: 21px;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
  .navbar-nav .active{
