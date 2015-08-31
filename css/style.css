@@ -520,7 +520,7 @@ html {
 }
 
 .project-info {
-  padding: 25px 0;
+  position: relative;
   width: 50%;
   height: 250px;
 }
@@ -539,13 +539,21 @@ html {
   text-shadow: 2px 2px 2px #333;
 }
 
-.project-brand span {
+.project-brand span,
+.project-info-inner {
   position: absolute;
   top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
+}
+
+.project-brand span {
+  left: 50%;
+}
+
+.project-info-inner {
+  left: 40%;
 }
 
 .project-brand-right .project-info,
@@ -601,6 +609,7 @@ html {
 @media screen and (max-width: 480px) {
   .project-info, 
   .project-brand {
+    position: relative;
     float: left;
     width: 100%;
   }
@@ -611,5 +620,17 @@ html {
 
   .projects-line {
     margin: 10px 0;
+  }
+
+  .project-info-inner {
+    position: relative;
+    left: auto; 
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    -webkit-transform: initial;
+    -ms-transform: initial;
+      transform: initial;
   }
 } 
