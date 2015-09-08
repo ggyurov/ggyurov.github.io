@@ -9,10 +9,10 @@
  *
  *  NEW:
  *  Blue theme: background-color: #3498DB;
- *              color:            #cff2ff;
+                color:            #cff2ff;
  *
  *  Green theme: background-color: #6BBD2E;
- *               color:            #e1f3cb;
+                 color:            #e1f3cb;
  * 
  *
 **/
@@ -276,11 +276,19 @@ html {
 
 .profile-contact {
   margin-top: 5%;
-  padding: 3% 0 3% 0;
+  padding: 3% 0 3%;
   width: 100%;
-  background-color: #5D9CEC;
   text-align: center;
-  color: #fff;
+}
+
+.profile-contact.blue-contact {
+  background-color: #3498DB;
+  color:            #cff2ff;
+}
+
+.profile-contact.green-contact {
+  background-color: #6BBD2E;
+  color:            #e1f3cb;
 }
 
 .index-hire-about {
