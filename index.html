@@ -125,18 +125,18 @@
                         <ul class="skills-set">
                             <li><i class="fa fa-check skills-set-tick"></i> SASS for CSS3</li>
                             <li><i class="fa fa-check skills-set-tick"></i> HTML5</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> Responsive Development & Mobile First Approach</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> Photoshop CC</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> WordPress</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> Responsive Development</li>
                             <li><i class="fa fa-check skills-set-tick"></i> OOP JavaScript</li>
                             <li><i class="fa fa-check skills-set-tick"></i> jQuery</li>
                             <li><i class="fa fa-check skills-set-tick"></i> AJAX</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> Git</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> SCRUM/AGILE</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> JIRA</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> XML</li>
-                            <li><i class="fa fa-check skills-set-tick"></i> Java</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> Photoshop CC</li>
                             <li><i class="fa fa-check skills-set-tick"></i> Demandware</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> Git</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> AGILE/SCRUM</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> JIRA</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> Java</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> WordPress</li>
+                            <li><i class="fa fa-check skills-set-tick"></i> XML</li>
                         </ul>
                 </div>
              </div>
@@ -158,7 +158,7 @@
                     <div class="project-info">
                         <div class="project-info-inner">
                             <h3 class="project-info-title">Yumi Direct <span class="project-info-year-employer"> - 2015 / Moda</span></h3>
-                            <p>Full site front-end development for both sites under the Yumi Direct brand - yumi.co.uk & melalondon.com, tailored responsive solution and performance optimizations.</p>
+                            <p>Full site front-end development for Yumi Direct's brand - yumi.co.uk, tailored responsive solution and performance optimizations.</p>
                             <a href="http://www.yumi.co.uk/" class="project-info-link blue-link">Go to Site</a>
                         </div>
                     </div>
@@ -172,6 +172,23 @@
 
             <div class="container">
                 <div class="project-block project-brand-left">
+                    <div class="project-info">
+                        <div class="project-info-inner">
+                            <h3 class="project-info-title">Mela London <span class="project-info-year-employer"> - 2015 / Moda</span></h3>
+                            <p>Full site front-end development for Yumi Direct's another brand site - melalondon.com, tailored responsive solution and performance optimizations.</p>
+                            <a href="http://www.melalondon.com/" class="project-info-link blue-link">Go to Site</a>
+                        </div>
+                    </div>
+                    <div class="project-brand mela">
+                        <span>Mela London</span>
+                    </div>
+                </div>
+             </div>
+
+            <hr class="projects-line" /> 
+
+            <div class="container">
+                <div class="project-block project-brand-right">
                     <div class="project-info">
                         <div class="project-info-inner">
                             <h3 class="project-info-title" class="project-info-title">Animal <span class="project-info-year-employer"> - 2015 / Moda</span></h3>
@@ -188,7 +205,7 @@
             <hr class="projects-line" />
 
             <div class="container">
-                <div class="project-block project-brand-right">
+                <div class="project-block project-brand-left">
                     <div class="project-info">
                         <div class="project-info-inner">
                             <h3 class="project-info-title">FinestraBG <span class="project-info-year-employer"> - 2014 / Freelance</span></h3>
@@ -205,7 +222,7 @@
             <hr class="projects-line" />
 
             <div class="container">
-                <div class="project-block project-brand-left">
+                <div class="project-block project-brand-right">
                     <div class="project-info">
                         <div class="project-info-inner">
                             <h3 class="project-info-title">SnapOrder <span class="project-info-year-employer"> - 2014 / Summer Practice</span></h3>
@@ -221,7 +238,7 @@
             <hr class="projects-line" />
 
             <div class="container">
-                <div class="project-block project-brand-right">
+                <div class="project-block project-brand-left">
                     <div class="project-info">
                         <div class="project-info-inner">
                             <h3 class="project-info-title">TwoTen Photography <span class="project-info-year-employer"> - 2013 / Freelance</span></h3>
@@ -264,8 +281,40 @@
     </section>
 
     <div class="profile-contact green-contact">
-            <p class="text-center">Interested in working with me for your next project? <br> <span class="text-large">georgigyurov7@gmail.com</span></p>
-            <p><span class="text-small">* fancy contact form coming up soon :)</span></p>
+        <p class="text-center text-large">Interested in working with me for your next project? <!--<br> <span class="text-large">georgigyurov7@gmail.com</span>--></p>
+        <!--<p><span class="text-small">* fancy contact form coming up soon :)</span></p>-->
+
+        <div id="form-messages"></div>
+
+        <form id="ajax-contact" method="post" action="mailer.php" autocomplete="off">
+
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="name" name="name" required>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="name">
+                    <span class="input__label-content input__label-content--hoshi">Name</span>
+                </label>
+            </span>
+
+            <br>
+
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="email" id="email" name="email" required>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
+                    <span class="input__label-content input__label-content--hoshi">Email</span>
+                </label>
+            </span>
+
+            <br>
+
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="message" name="message" required>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="message">
+                    <span class="input__label-content input__label-content--hoshi">Message</span>
+                </label>
+            </span>
+
+            <button class="ghost-btn" type="submit">Send</button>
+        </form>
     </div>
         
 	<section class="footer-section">
@@ -281,8 +330,9 @@
         </div>
     </section>
 
-    <!-- Core JavaScript Files -->
-    <script async src="js/jquery-1.10.2.js"></script>
+    <!-- JavaScript Files -->
+    <script src="js/jquery-2.1.0.min.js"></script>
     <script async src="js/bootstrap.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 </html>
