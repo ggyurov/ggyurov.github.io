@@ -5,11 +5,11 @@ $("#contact").submit(function(e){
   var text = $("#text").val();
   var dataString = 'name=' + name + '&email=' + email + '&text=' + text;
   function isValidEmail(emailAddress) {
-    var pattern = new RegExp(/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm);
+    var pattern = new RegExp(/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i);
     return pattern.test(emailAddress);
   };
  
-  if (isValidEmail(email) && (text.length > 50) && (name.length > 1)){
+  if (isValidEmail(email) && (text.length > 25) && (name.length > 1)){
     $.ajax({
     type: "POST",
     url: "mailer.php",
