@@ -827,3 +827,9 @@ html {
   color: #cff2ff;
   border-color: #3498DB;
 }
+
+.ghost-btn[disabled] {
+  background-color: #aeaeae;
+  border-color: #aeaeae;
+  opacity: 0.7;
+}

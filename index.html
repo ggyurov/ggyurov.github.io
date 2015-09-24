@@ -289,12 +289,10 @@
     </section>
 
     <div class="profile-contact green-contact">
-        <p class="text-center">Interested in working with me for your next project? <br> <span class="text-large">georgigyurov7@gmail.com</span></p>
-        <p><span class="text-small">* fancy contact form coming up soon :)</span></p>
+        <p class="text-center text-large">Interested in working with me for your next project? <!--<br> <span class="text-large">georgigyurov7@gmail.com</span>--></p>
+        <!--<p><span class="text-small">* fancy contact form coming up soon :)</span></p>-->
 
-        <!--<div id="form-messages"></div>
-
-        <form id="ajax-contact" method="post" action="mailer.php" autocomplete="off">
+        <form id="contact" method="post" autocomplete="off">
 
             <span class="input input--hoshi">
                 <input class="input__field input__field--hoshi" type="text" id="name" name="name" required>
@@ -315,14 +313,17 @@
             <br>
 
             <span class="input input--hoshi">
-                <input class="input__field input__field--hoshi" type="text" id="message" name="message" required>
+                <input class="input__field input__field--hoshi" type="text" id="text" name="text" required>
                 <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="message">
                     <span class="input__label-content input__label-content--hoshi">Message</span>
                 </label>
             </span>
 
-            <button class="ghost-btn" type="submit">Say hi</button>
-        </form>-->
+            <button class="ghost-btn" type="submit">Send</button>
+
+            <p class="success" style="display:none">Your message has been sent successfully.</p>
+            <p class="error" style="display:none">E-mail must be valid and message must be longer than 50 characters.</p>
+        </form>
     </div>
         
 	<section class="footer-section">
